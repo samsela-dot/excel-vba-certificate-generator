@@ -1,5 +1,5 @@
 # excel-vba-certificate-generator
-A demo of an excel VBA system that i developed
+A demo of an Excel VBA system that I developed
 # Excel VBA Process Automation Tool
 
 ## Overview
@@ -27,7 +27,7 @@ I developed a VBA-based system that:
 - VBA (Visual Basic for Applications)
 
 ## Demo
-🎥 Short demo video: [link here]
+🎥 Short demo video: (https://www.loom.com/share/d3b9eaa596bd4548b4687f23b301168c)
 
 ## Notes
 Source code snippets available on request.
