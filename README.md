@@ -22,13 +22,6 @@ At the training centre, participants attend up to three courses over three days 
    - saves **one PDF per participant** (`Lastname_Firstname.pdf`) in the `Certificates` folder
    - catches errors and shows a clear message instead of crashing
 
-## Result at BBZ
-
-| | Before | After |
-|---|---|---|
-| Time per course group | [e.g. X hours of copying] | [e.g. 1 click, under a minute] |
-| Errors | [e.g. regular corrections] | [e.g. none, since data is entered only once] |
-
 ## Example
 
 ![Input sheet](excel-vba-certificate-generator/screenshots/input_sheet.png)
@@ -41,13 +34,14 @@ At the training centre, participants attend up to three courses over three days 
 
 | File | Purpose |
 |---|---|
-| `CertificateGenerator.xlsm` | Workbook: input, merge source, lists, button |
-| `CertificateTemplate.docx` | Word template with merge fields (`«First_Name»`, `«Course_Day_1»`, `«Grade»` …) |
-| `src/CertificateGenerator.bas` | VBA code (exported module, readable without Excel) |
+| [`CertificateGenerator.xlsm`](excel-vba-certificate-generator/CertificateGenerator.xlsm) | Workbook: input, merge source, lists, button |
+| [`CertificateTemplate.docx`](excel-vba-certificate-generator/CertificateTemplate.docx) | Word template with merge fields (`«First_Name»`, `«Course_Day_1»`, `«Grade»` …) |
+| [`src/CertificateGenerator.bas`](excel-vba-certificate-generator/src/CertificateGenerator.bas) | VBA code (exported module, readable without Excel) |
+| [`Certificates/`](excel-vba-certificate-generator/Certificates) | Example output: 8 PDFs generated from the test data |
 
 ## How to use
 
-1. Put `CertificateGenerator.xlsm` and `CertificateTemplate.docx` in the **same folder**. A local folder is best; OneDrive folders can cause path problems.
+1. Put `CertificateGenerator.xlsm` and `CertificateTemplate.docx` in the **same folder** (local or OneDrive-synced).
 2. Open the workbook and enable macros.
 3. Enter participants in `Sheet1`.
 4. Click **Create Certificates (PDF)**. The PDFs appear in the `Certificates` subfolder.
@@ -61,7 +55,7 @@ Requires Microsoft Excel and Word (Windows).
 - **PDF export** per record (`ExportAsFixedFormat`)
 - **Error handling** with clean-up (Word is always closed again)
 - **Data validation** (dropdowns), checkboxes, named ranges, `IF`/`VLOOKUP` logic
-- Relative paths (`ThisWorkbook.Path`), so it works on any computer
+- Relative paths, including conversion of OneDrive web paths to local paths, so it works on any computer
 
 ---
 
