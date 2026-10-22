@@ -24,7 +24,7 @@ Private Const MERGE_SHEET As String = "Sheet2"
 ' Word constants (late binding, no reference to the Word library needed)
 Private Const wdFormLetters As Long = 0
 Private Const wdSendToNewDocument As Long = 0
-Private Const wdLastRecord As Long = -16
+Private Const wdLastRecord As Long = -5          ' WdMailMergeActiveRecord.wdLastRecord
 Private Const wdExportFormatPDF As Long = 17
 
 Public Sub GenerateCertificates()
