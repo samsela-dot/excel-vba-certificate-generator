@@ -31,9 +31,9 @@ At the training centre, participants attend up to three courses over three days 
 
 ## Example
 
-![Input sheet](screenshots/input_sheet.png)
+![Input sheet](excel-vba-certificate-generator/screenshots/input_sheet.png)
 
-![Example certificate](screenshots/example_certificate.png)
+![Example certificate](excel-vba-certificate-generator/screenshots/example_certificate.png)
 
 🎥 [Watch the demo video](https://www.loom.com/share/d3b9eaa596bd4548b4687f23b301168c)
 
