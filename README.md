@@ -66,8 +66,3 @@ Requires Microsoft Excel and Word (Windows).
 ---
 
 **Author:** Subhi Al-Sela · [LinkedIn](https://www.linkedin.com/in/subhi-al-sela-39b72a238/) · [Power BI project](https://github.com/samsela-dot/liefertermin-dq-dashboard)
-## Demo
-🎥 Short demo video: (https://www.loom.com/share/d3b9eaa596bd4548b4687f23b301168c)
-
-## Notes
-Source code snippets available on request.
